@@ -1,0 +1,142 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+  <param-name>email</param-name>
+  <param-value>boopathy@gmail.com</param-value>
+  </context-param>
+  
+  
+<servlet>
+<servlet-name>c1</servlet-name>
+<servlet-class>servelet.servletConfig1</servlet-class>
+
+<init-param>
+<param-name>name</param-name>
+<param-value>Boopathy</param-value>
+</init-param>
+</servlet>
+  
+<servlet>
+<servlet-name>c2</servlet-name>
+<servlet-class>servelet.servletConfig2</servlet-class>
+
+
+<init-param>
+
+<param-name>name</param-name>
+<param-value>karthikeyan</param-value>
+</init-param>
+</servlet>
+  
+  <servlet>
+<servlet-name>s1</servlet-name>
+<servlet-class>servelet.servletContext1</servlet-class>
+</servlet>
+  <servlet>
+<servlet-name>s2</servlet-name>
+<servlet-class>servelet.servletContext2</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>update</servlet-name>
+<servlet-class>servelet.update</servlet-class>
+</servlet>
+    <servlet>
+ <servlet-name>fetch</servlet-name>
+ <servlet-class>servelet.fetch</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>register</servlet-name>
+ <servlet-class>servelet.registrationForm</servlet-class>
+ </servlet>
+    <servlet>
+ <servlet-name>signin</servlet-name>
+ <servlet-class>servelet.signin</servlet-class>
+ </servlet>
+   <servlet>
+<servlet-name>add</servlet-name>
+<servlet-class>servelet.Addition</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>a</servlet-name>
+  <servlet-class>servelet.StaticServlet</servlet-class>
+ </servlet>
+   <servlet>
+  <servlet-name>b</servlet-name>
+  <servlet-class>servelet.Dynamic</servlet-class>
+ </servlet>
+  <servlet>	
+ <servlet-name>life</servlet-name>
+ <servlet-class>servelet.Lifecycle</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>c</servlet-name>
+ <servlet-class>servelet.QuerryParameter</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>c</servlet-name>
+ <url-pattern>/query</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>a</servlet-name>
+ <url-pattern>/static</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+ <servlet-name>b</servlet-name>
+ <url-pattern>/Dynamic</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+ <servlet-name>life</servlet-name>
+ <url-pattern>/lifecycle</url-pattern>
+ </servlet-mapping>
+
+ <servlet-mapping>
+ <servlet-name>add</servlet-name>
+ <url-pattern>/add</url-pattern>
+ </servlet-mapping>
+
+ <servlet-mapping>
+ <servlet-name>signin</servlet-name>
+ <url-pattern>/signin</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+<servlet-name>fetch</servlet-name>
+<url-pattern>/fetch</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>register</servlet-name>
+<url-pattern>/register</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>s1</servlet-name>
+<url-pattern>/s1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>s2</servlet-name>
+<url-pattern>/s2</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>update</servlet-name>
+<url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet-mapping>
+<servlet-name>c1</servlet-name>
+<url-pattern>/c1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>c2</servlet-name>
+<url-pattern>/c2</url-pattern>
+</servlet-mapping>
+</web-app>
+
